@@ -18,7 +18,7 @@ func binaryfind(arr *[]int, leftindex int, rightindex int, num int) {
 	}
 }
 
-func sort(arr *[]int, length int)  {
+func sortArray(arr *[]int, length int)  {
 	var temp int
 	for j := 0; j < length; j++ {
 		for i := 0; i < length-1-j; i++ {
@@ -43,7 +43,7 @@ func main() {
 	}
 	fmt.Println("请输入要查询的数")
 	fmt.Scanln(&number)
-	sort(&arr, length)
+	sortArray(&arr, length)
 	fmt.Println(arr)
 	binaryfind(&arr, 0, length-1, number)
 }
