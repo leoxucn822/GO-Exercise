@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	filepath1 := "/etc/passwd"
-	filepath2 := "/tmp/passwd"
+	filepath1 := "/home/leo/Pictures/1.png"
+	filepath2 := "/tmp/vmware"
 
 	data, err := ioutil.ReadFile(filepath1)
 	if err != nil {

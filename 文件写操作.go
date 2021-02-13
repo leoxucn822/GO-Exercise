@@ -13,6 +13,7 @@ func main() {
 	}
 	defer str.Close()
 	write := bufio.NewWriter(str)
-	write.WriteString("hello go programming language!\n")
+	//有些编辑器识别\r有些识别\n
+	write.WriteString("hello go programming language!\r\n")
 	write.Flush()
 }
